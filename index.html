@@ -13,7 +13,28 @@
 <script>
 
 
+        const sharedFunction = () => {
+            console.log('Shared function implementation');
+        };
+
+        const featureA = () => {
+            console.log('Feature A implementation');
+            console.log('New x');
+            
+        };
+        const featureB = () => {
+            console.log('New x');
+            console.log('New x');
+            console.log('Feature B implementation');
+        };
+
+        featureA();
+        featureB();
+        
+
+
     const featureF = () => {
+        sharedFunction();
         console.log('Feature F implementation');
     };
 
