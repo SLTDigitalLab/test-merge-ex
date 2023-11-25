@@ -2,45 +2,30 @@
 <html lang="en">
 
 <head>
-       
     <meta charset="UTF-8">
-        <title>Home</title>
+    <title>Home</title>
+</head>
 
 <body>
-        <h1>Home</h1>
-        <p>Welkom op de homepagina</p>
-       
-<script>
+    <h1>Home</h1>
+    <p>Welkom op de homepagina</p>
 
-
+    <script>
         const sharedFunction = () => {
             console.log('Shared function implementation');
         };
 
         const featureA = () => {
             console.log('Feature A implementation');
-            console.log('New x');
-            
         };
-        const featureB = () => {
-            console.log('New x');
-            console.log('New x');
-            console.log('Feature B implementation');
+        const featureF = () => {
+            console.log('Feature F implementation');
         };
 
         featureA();
-        featureB();
-          sharedFunction();
-
-
-    const featureF = () => {
+        featureF(); // Changed this line in feature-f branch
         sharedFunction();
-        console.log('Feature F implementation');
-    };
-
-    featureF();
-
-</script>
+    </script>
 </body>
 
 </html>
